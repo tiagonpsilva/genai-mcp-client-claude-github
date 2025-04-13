@@ -1,10 +1,10 @@
-# Tutorial: Usando o GitHub MCP Server com Claude Desktop
+# 🔄 Tutorial: Usando o GitHub MCP Server com Claude Desktop
 
 Este tutorial demonstra a integração do GitHub com o Claude Desktop através do Model Context Protocol (MCP), usando imagens capturadas da aplicação em funcionamento.
 
-## 1. Listando Repositórios do GitHub
+## 📚 1. Listando Repositórios do GitHub
 
-![Listando repositórios](images/exemplo01.png)
+<img src="images/exemplo01.png" alt="Listando repositórios" width="85%" />
 
 **Explicação:** Nesta imagem, vemos o Claude utilizando funções do GitHub MCP para listar todos os repositórios públicos de um usuário. Primeiro, o Claude usa a função `get_me` para identificar o perfil do usuário (tiagonpsilva). 
 
@@ -17,9 +17,9 @@ Em seguida, ele utiliza a função `search_repositories` para buscar os reposit�
 
 Esta funcionalidade é particularmente útil quando você deseja ter uma visão geral dos seus projetos ou quando precisa acessar rapidamente um repositório específico sem sair da interface do Claude Desktop.
 
-## 2. Verificando Commits Recentes
+## 🔄 2. Verificando Commits Recentes
 
-![Verificando commits recentes](images/exemplo02.png)
+<img src="images/exemplo02.png" alt="Verificando commits recentes" width="85%" />
 
 **Explicação:** Esta imagem demonstra como o Claude pode consultar commits recentes em repositórios GitHub. O usuário perguntou qual foi o último commit realizado no dia, e o Claude utilizou a função `list_commits` para buscar essa informação.
 
@@ -27,9 +27,9 @@ A imagem mostra que o Claude identificou um commit realizado às 01:10:32 (UTC) 
 
 O Claude também verificou commits no repositório "genai-prompts-collection", demonstrando como ele pode acompanhar atividades em múltiplos repositórios simultaneamente, tudo através da interface do MCP.
 
-## 3. Instruções de Uso dos Prompts
+## 📋 3. Instruções de Uso dos Prompts
 
-![Como usar os prompts](images/exemplo03.png)
+<img src="images/exemplo03.png" alt="Como usar os prompts" width="85%" />
 
 **Explicação:** Esta imagem mostra as instruções de uso dos prompts disponíveis no repositório "genai-prompts-collection". O processo é dividido em quatro passos simples:
 
@@ -40,15 +40,15 @@ O Claude também verificou commits no repositório "genai-prompts-collection", d
 
 A imagem também detalha um desenvolvimento recente: a adição do "Arch Macro View Generator", um prompt para geração de diagramas arquiteturais usando o C4 Model com PlantUML. É interessante notar que este prompt inclui um exemplo detalhado relacionado ao Model Context Protocol (MCP), mostrando componentes como camada de modelo, gerenciamento de contexto e interface de protocolo.
 
-## 4. Explorando um Repositório com Claude
+## 🔍 4. Explorando um Repositório com Claude
 
-![Examinando um repositório](images/exemplo03-1.png)
+<img src="images/exemplo03-1.png" alt="Examinando um repositório" width="85%" />
 
 **Explicação:** Nesta imagem, vemos o Claude Desktop analisando um repositório chamado "genai-prompts-collection". O usuário pediu ao Claude para explicar o projeto, e ele está explorando a estrutura do repositório usando a função `get_file_contents`. O Claude está navegando pelo diretório de prompts e acessando o conteúdo de arquivos específicos, incluindo um prompt recém-adicionado chamado "prompt-arch-generator.md".
 
 Na parte inferior da imagem, Claude apresenta uma explicação detalhada do projeto, descrevendo-o como uma coleção de prompts (instruções) especializados para modelos de linguagem de grande porte (LLMs) como ChatGPT, Claude e Gemini. Esses prompts são estruturados para automatizar a geração de código, documentação e artefatos técnicos.
 
-## Conclusão
+## ✅ Conclusão
 
 Estas imagens demonstram como a integração do GitHub MCP Server com o Claude Desktop permite uma interação natural com repositórios GitHub, incluindo:
 

@@ -26,7 +26,7 @@ Este repositório também inclui um arquivo de exemplo na raiz do projeto que de
 
 ## ⚙️ Passo 2: Configurar o Claude Desktop
 
-### Usando Docker
+### Opção A: Usando Docker (Recomendado)
 
 1. Abra o menu do Claude Desktop e selecione **Settings**
 2. No painel de configurações, clique em **Developer** no menu lateral
@@ -53,6 +53,32 @@ Este repositório também inclui um arquivo de exemplo na raiz do projeto que de
   }
 }
 ```
+
+### Opção B: Usando NPX (Sem Docker)
+
+1. Abra o menu do Claude Desktop e selecione **Settings**
+2. No painel de configurações, clique em **Developer** no menu lateral
+3. Clique em **Edit Config**
+4. Adicione o seguinte JSON ao arquivo de configuração, substituindo `<YOUR_TOKEN>` pelo seu token do GitHub:
+
+```json
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "<YOUR_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+> **Nota**: NPX é uma ferramenta incluída com o Node.js que permite executar pacotes sem instalá-los permanentemente. Esta opção é ideal para usuários que não têm Docker instalado ou preferem uma configuração mais leve.
 
 ## 📁 Passo 3: Localização do arquivo de configuração
 
