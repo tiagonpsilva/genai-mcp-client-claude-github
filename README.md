@@ -2,7 +2,9 @@
 
 Este guia explica como configurar o servidor MCP oficial do GitHub para uso com o Claude Desktop, permitindo que você interaja com seus repositórios GitHub através do Claude.
 
-## 📋 Requisitos Prévios
+Este repositório também inclui um arquivo de exemplo na raiz do projeto que demonstra casos de uso comuns.
+
+## 📋 Requisitos 
 
 1. **Claude Desktop** instalado e atualizado
 2. **Node.js e npm** instalados no seu computador
@@ -24,7 +26,7 @@ Este guia explica como configurar o servidor MCP oficial do GitHub para uso com 
 
 ## ⚙️ Passo 2: Configurar o Claude Desktop
 
-### Opção A: Usando Docker (Recomendado)
+### Usando Docker
 
 1. Abra o menu do Claude Desktop e selecione **Settings**
 2. No painel de configurações, clique em **Developer** no menu lateral
@@ -43,30 +45,6 @@ Este guia explica como configurar o servidor MCP oficial do GitHub para uso com 
         "-e",
         "GITHUB_PERSONAL_ACCESS_TOKEN",
         "ghcr.io/github/github-mcp-server"
-      ],
-      "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "<YOUR_TOKEN>"
-      }
-    }
-  }
-}
-```
-
-### Opção B: Usando NPX (Sem Docker)
-
-1. Abra o menu do Claude Desktop e selecione **Settings**
-2. No painel de configurações, clique em **Developer** no menu lateral
-3. Clique em **Edit Config**
-4. Adicione o seguinte JSON ao arquivo de configuração, substituindo `<YOUR_TOKEN>` pelo seu token do GitHub:
-
-```json
-{
-  "mcpServers": {
-    "github": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-github"
       ],
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "<YOUR_TOKEN>"
@@ -97,6 +75,14 @@ Se o arquivo não existir, crie-o.
 2. Você deve ver um ícone de ferramentas (martelo) no canto inferior direito da caixa de entrada
 3. Clique neste ícone para ver as ferramentas GitHub disponíveis
 4. Teste a integração pedindo ao Claude para realizar uma operação simples do GitHub, como listar seus repositórios
+
+## 📝 Exemplos de Uso
+
+Na raiz deste repositório você encontrará um arquivo de exemplo ([exemplo-de-uso.md](./exemplo-de-uso.md)) que demonstra como utilizar a integração do GitHub com o Claude Desktop em cenários práticos. Consulte este arquivo para:
+
+- Ver exemplos de comandos e solicitações para o Claude
+- Entender os fluxos de trabalho comuns para gerenciamento de código
+- Aprender a usar recursos avançados da integração
 
 ## 🔧 Resolução de Problemas
 
