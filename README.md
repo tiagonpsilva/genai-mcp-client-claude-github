@@ -6,7 +6,7 @@ Este repositório também inclui um arquivo de exemplo na raiz do projeto que de
 
 ## 📋 Requisitos 
 
-1. **Claude Desktop** instalado e atualizado
+1. **[Claude Desktop](https://claude.ai/download)** instalado e atualizado
 2. **Node.js e npm** instalados no seu computador
 3. **Token de Acesso Pessoal do GitHub** (você criará isso durante o processo)
 4. Opcionalmente: **Docker** para execução em contêiner
